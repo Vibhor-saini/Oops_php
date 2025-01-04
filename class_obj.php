@@ -25,4 +25,7 @@ $obj1->Secondname("Sugandha Saini");
 $obj2 = new myname();
 $obj2->Secondname("Sugandha Saini");
 
+$obj4 = new myname();
+$obj4->Secondname("mayank Saini");
+
 ?>
