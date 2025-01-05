@@ -149,6 +149,7 @@ class class2 extends class1
         // $this->num=2;
         parent::__construct();
         $this->num = 2;
+        echo "<br>";
         echo "__construct 2";
         echo "<br>";
     }
@@ -164,4 +165,37 @@ class class2 extends class1
 $obj = new  class2();
 $obj->fun1();
 echo $obj->num;
+
+
+
+// example 6======================================
+
+class Fruit {
+    public $name;
+    public $color;
+    public function __construct($name, $color) {
+      $this->name = $name;
+      $this->color = $color;
+    }
+    public function intro() {
+      
+      echo "The fruit is {$this->name} and the color is {$this->color}.";
+    }
+  }
+  
+  class Strawberry extends Fruit {
+    public $weight;
+    public function __construct($name, $color, $weight) {
+      $this->name = $name;
+      $this->color = $color;
+      $this->weight = $weight;
+    }
+    public function intro() {
+      echo "<br>";
+      echo "The fruit is {$this->name}, the color is {$this->color}, and the weight is {$this->weight} gram.";
+    }
+  }
+  
+  $strawberry = new Strawberry("Strawberry", "red", 50);
+  $strawberry->intro();
 ?>
