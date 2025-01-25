@@ -5,3 +5,5 @@ Here is some easy code for every topic related to the Oops concepts in Php:==
 4. Inheritance
 5. Final keyword
 6. Constants
+7. Namespace
+   
